@@ -1,0 +1,1 @@
+print('Known plaintext can reveal Hill cipher key matrix')

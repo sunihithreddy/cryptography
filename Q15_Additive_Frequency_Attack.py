@@ -1,0 +1,8 @@
+cipher=input("Enter Ciphertext: ").upper()
+for key in range(26):
+ plain=""
+ for ch in cipher:
+  if ch.isalpha():
+   plain+=chr((ord(ch)-65-key)%26+65)
+  else: plain+=ch
+ print("Key",key,":",plain)
